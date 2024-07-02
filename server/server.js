@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const dotenv = require('dotenv');
+const dotenv = require("dotenv");
 const cors = require('cors');
 
 dotenv.config();
@@ -18,10 +18,6 @@ connection.once('open' , () => {
  console.log("MongoDB database connection established successfully");
 
 })
-
-// Routes
-const exampleRouter = require('./routes/example');
-app.use('/example', exampleRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
