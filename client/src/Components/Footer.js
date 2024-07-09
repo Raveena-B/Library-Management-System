@@ -10,11 +10,12 @@ import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 
 const Item = styled(Paper)(({ theme }) => ({
-  //   backgroundColor: "#335ab1ec",
+    backgroundColor: "#9ba5d3",
   ...theme.typography.body2,
   padding: theme.spacing(1),
-  textAlign: "left",
-//   color: "#000000",
+  textAlign: "center",
+  color: "#000000",
+  
 }));
 
 const Footer = () => {
@@ -28,11 +29,11 @@ const Footer = () => {
       </h4>
       <div className="row">
         <div className="column">
-          <div className="logo-column">
+          <div className="logo-column"> 
             <img src={image2} alt="Logo" className="logo" />
             <img src={image3} alt="Logo" className="logo-nipm" />
           </div>
-        </div>
+        </div>      
         <div className="text-column">
           <h3 className="footer-tag">
             National Institute Of Plantation <br />
@@ -103,11 +104,13 @@ const Footer = () => {
         <div className="column-footer"><b>CONTACT US</b>
         <div className="column-contactus" >
           <p sx={{ mt: 2, mb: 1 }}>Library Office :<br/><br/></p>
-          <p sx={{ mb: 2 }}>Tel       :      +94 0713246656 Ext:8520</p>
-          <p>Email      :        nipm@gmail.com</p>
+          <p sx={{ mb: 2 }}>Tel          :      +94 0713246656 Ext:8520</p>
+          <p>Email         :        nipm@gmail.com</p>
         </div>
         </div>
-       
+       <div>
+        
+       </div>
       </div>
     </div>
   );
