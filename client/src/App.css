@@ -126,13 +126,12 @@
 }
 
 .footer-tag{
-   font-family: 'Courier New', Courier, monospace;
-   color: #ffffff;
-   font-size: large;
+  margin-left: 10px;
+  
 }
 
 .text2-column{
-  margin-left: 435px;
+  margin-left: 170px;
   font-size:larger;
 }
 
@@ -207,3 +206,9 @@
 .dropdown:hover .dropdown-content {display: block;  }
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.cpytext{
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;  
+}

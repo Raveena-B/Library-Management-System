@@ -4,9 +4,7 @@ import image2 from "../asserts/images/2.png";
 import image3 from "../asserts/images/3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import Button from "@mui/material/Button";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
+
 
 const Header = () => {
   return (
