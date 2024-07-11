@@ -2,6 +2,7 @@ import React from "react";
 import image1 from "../asserts/images/1.jpg";
 import image2 from "../asserts/images/2.png";
 import image3 from "../asserts/images/3.png";
+import Home from "./Home"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
@@ -78,6 +79,7 @@ const Header = () => {
         </nav>
       </div>
       <img src={image1} alt="library banner" className="header-image" />
+      <Home/>
     </div>
   );
 };
