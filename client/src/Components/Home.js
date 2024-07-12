@@ -20,7 +20,7 @@ const Home = () => {
           <NewsCard image={image1} title="Latest News 1" />
           <NewsCard image={image2} title="Latest News 2" />
           <NewsCard image={image3} title="Latest News 3" />
-         
+            
         </div>
       </div>
     </div>

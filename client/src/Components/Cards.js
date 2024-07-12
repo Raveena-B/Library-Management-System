@@ -73,4 +73,6 @@ const NewsCard = ({ image, title }) => {
   );
 };
 
+
+
 export { CardComponent, NewsCard };
