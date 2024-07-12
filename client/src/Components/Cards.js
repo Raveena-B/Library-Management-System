@@ -40,34 +40,36 @@ const CardComponent = ({ image, title }) => {
   );
 };
 
-const NewsCard = ({ image, title }) => {
+const NewsCard = ({ image, newstitle , date}) => {
   return (
     <Card 
       sx={{ 
-        maxWidth: 550, 
+        maxWidth: 400,
+        height:450,
         margin: 2, 
         backgroundColor: '#D4E6F1', 
         color: '#000', 
-        transition: 'transform 0.1s', // Smooth transition
+        transition: 'transform 0.1s', 
         '&:hover': {
-          transform: 'scale(1.07)' // Zoom effect
+          transform: 'scale(1.07)' 
         },
         cursor: 'pointer'
       }}
     >
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{ height: 200 }}
         image={image}
-        title={title}
+        newstitle={newstitle}
+        date={date}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div" sx={{ textAlign: "center" }}>
-          {title}
+        <Typography gutterBottom variant="h6" component="div" sx={{ textAlign: "center" , height:150}}>
+          {newstitle} <br/> 
+          {date}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button size="small" sx={{marginLeft:30}}>Read More</Button>
       </CardActions>
     </Card>
   );
