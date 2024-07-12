@@ -132,8 +132,8 @@ const Footer = () => {
             width:"95%",
             borderColor: "#B2BEB5",
           }}
-        />
-        <p className="cpytext" sx={{mt:8}}>@2024 All Right Reserved</p><br/>
+        />  
+        <p className="cpytext" sx={{mt:8}}>@2024 All right reserved</p><br/>
     </div>
   );
 };

@@ -11,16 +11,15 @@ const CardComponent = ({ image, title }) => {
   return (
     <Card 
       sx={{ 
-        maxWidth: 250, 
-        marginLeft: 5, 
-        marginTop: 3, 
+        maxWidth: 350, 
+        margin: 2, 
         backgroundColor: '#D4E6F1', 
         color: '#000', 
         transition: 'transform 0.1s', // Smooth transition
         '&:hover': {
           transform: 'scale(1.07)' // Zoom effect
         },
-        cursor:'pointer'
+        cursor: 'pointer'
       }}
     >
       <CardMedia
@@ -41,4 +40,37 @@ const CardComponent = ({ image, title }) => {
   );
 };
 
-export default CardComponent;
+const NewsCard = ({ image, title }) => {
+  return (
+    <Card 
+      sx={{ 
+        maxWidth: 550, 
+        margin: 2, 
+        backgroundColor: '#D4E6F1', 
+        color: '#000', 
+        transition: 'transform 0.1s', // Smooth transition
+        '&:hover': {
+          transform: 'scale(1.07)' // Zoom effect
+        },
+        cursor: 'pointer'
+      }}
+    >
+      <CardMedia
+        sx={{ height: 140 }}
+        image={image}
+        title={title}
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div" sx={{ textAlign: "center" }}>
+          {title}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+  );
+};
+
+export { CardComponent, NewsCard };
