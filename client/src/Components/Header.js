@@ -1,11 +1,9 @@
 import React from "react";
-import image1 from "../asserts/images/1.jpg";
 import image2 from "../asserts/images/2.png";
 import image3 from "../asserts/images/3.png";
-import Home from "./Home"
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-
 
 const Header = () => {
   return (
@@ -31,55 +29,52 @@ const Header = () => {
         <nav className="nav">
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li className="dropdown">
-              <a href="/e-resources">E-Resources</a>
-              <div class="dropdown-content">
-                <a href="#">E - Database</a>
-                <a href="#">E - Books</a>
-                <a href="#">E - Journels</a>
+              <Link to="/e-resources">E-Resources</Link>
+              <div className="dropdown-content">
+                <Link to="#">E - Database</Link>
+                <Link to="#">E - Books</Link>
+                <Link to="#">E - Journals</Link>
               </div>
             </li>
             <li className="dropdown">
-              <a href="/personel">Personel</a>
-              <div class="dropdown-content">
-                <a href="#">Staff</a>
-                <a href="#">Librarian</a>
+              <Link to="/personnel">Personnel</Link>
+              <div className="dropdown-content">
+                <Link to="/staff">Staff</Link>
+                <Link to="/librarian">Librarian</Link>
               </div>
             </li>
             <li className="dropdown">
-              <a href="/useOfLibrary">Use Of Library</a>
-              <div class="dropdown-content">
-              <a href="#">Membership Category</a>
-                <a href="#">Opening Hours</a>
-                <a href="#">Borrow , Return & Renew</a>
-                <a href="#">Facilities</a>
-                <a href="#">Services</a>
-                <a href="#">User Guides</a>
-                <a href="#">FAQ</a>
-
+              <Link to="/useOfLibrary">Use Of Library</Link>
+              <div className="dropdown-content">
+                <Link to="/membershipcategory">Membership Category</Link>
+                <Link to="/openinghours">Opening Hours</Link>
+                <Link to="/borrow">Borrow , Return & Renew</Link>
+                <Link to="/facilities">Facilities</Link>
+                <Link to="/services">Services</Link>
+                <Link to="/userguides">User Guides</Link>
+                <Link to="/faq">FAQ</Link>
               </div>
             </li>
             <li className="dropdown">
-              <a href="/aboutus">About Us</a>
-              <div class="dropdown-content">
-              <a href="#">Vision & Mision</a>
-                <a href="#">History</a>
-                <a href="#">Privacy & Policies</a>
-                <a href="#">Rules & Regulations</a>
-                <a href="#">Library Gallery</a>
-
+              <Link to="/aboutus">About Us</Link>
+              <div className="dropdown-content">
+                <Link to="/vision">Vision & Mission</Link>
+                <Link to="/history">History</Link>
+                <Link to="/privacypolicy">Privacy & Policies</Link>
+                <Link to="/rulesregulations">Rules & Regulations</Link>
+                <Link to="/libgallery">Library Gallery</Link>
               </div>
             </li>
             <li>
-              <a href="/contactus">Contact Us</a>
+              <Link to="/contactus">Contact Us</Link>
             </li>
           </ul>
         </nav>
       </div>
-      <img src={image1} alt="library banner" className="header-image" />
-      <Home/>
+     
     </div>
   );
 };
