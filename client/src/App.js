@@ -17,6 +17,8 @@ import History from "./Pages/History";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import RulesRegulations from "./Pages/RulesRegulations";
 import LibGallery from "./Pages/LibGallery";
+import Login from "./Components/Login";
+
 
 function App() {
   return (
