@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
@@ -20,12 +20,13 @@ import LibGallery from "./Pages/LibGallery";
 import Login from "./Components/Login";
 
 function App() {
+  const location = useLocation();
 
-  
+  const isLoginRoute = location.pathname === "/login";
+
   return (
     <div className="App">
-      <Header />
-
+      {!isLoginRoute && <Header />}
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
@@ -44,7 +45,7 @@ function App() {
         <Route path="/rulesregulations" element={<RulesRegulations />} />
         <Route path="/libgallery" element={<LibGallery />} />
       </Routes>
-      <Footer />
+      {!isLoginRoute && <Footer />}
     </div>
   );
 }
