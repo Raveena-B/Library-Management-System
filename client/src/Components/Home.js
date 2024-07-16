@@ -11,9 +11,11 @@ import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 
 
+
 const Home = () => {
   return (
     <div >
+       
        <img src={image6} alt="library banner" className="header-image" />
       <div
         className="row"

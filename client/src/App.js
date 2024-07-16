@@ -19,12 +19,15 @@ import RulesRegulations from "./Pages/RulesRegulations";
 import LibGallery from "./Pages/LibGallery";
 import Login from "./Components/Login";
 
-
 function App() {
+
+  
   return (
     <div className="App">
       <Header />
+
       <Routes>
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
         <Route path="/staff" element={<Staff />} />
         <Route path="/librarian" element={<Librarian />} />
