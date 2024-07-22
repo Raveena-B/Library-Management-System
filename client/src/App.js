@@ -18,11 +18,12 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import RulesRegulations from "./Pages/RulesRegulations";
 import LibGallery from "./Pages/LibGallery";
 import Login from "./Components/Login";
+import Register from "./Components/Register";
 
 function App() {
   const location = useLocation();
 
-  const isLoginRoute = location.pathname === "/login";
+  const isLoginRoute = location.pathname === "/login" ;
 
   return (
     <div className="App">
@@ -44,6 +45,7 @@ function App() {
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/rulesregulations" element={<RulesRegulations />} />
         <Route path="/libgallery" element={<LibGallery />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       {!isLoginRoute && <Footer />}
     </div>

@@ -1,29 +1,34 @@
 import React from 'react';
-import image1 from '../asserts/images/gg.png';
+import image1 from '../asserts/images/rr.jpg';
 import './style.css';
 import { Card } from '@mui/material';
 
-const Login = () => {
+const Register = () => {
   return (
     <div className="login-container">
-       <div className="login-banner">
+      <div className="login-banner">
         <img src={image1} alt="Banner" />
       </div>
       <div className="login-form">
-        <h2 style={{textAlign:"center"}}>Sign In</h2>
+        <h2 style={{ textAlign: "center" }}>Register</h2>
         <form>
           <label htmlFor="username">Username</label>
           <input type="text" id="username" name="username" required />
           
+          <label htmlFor="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          
           <label htmlFor="password">Password</label>
           <input type="password" id="password" name="password" required />
+
+          <label htmlFor="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" required />
           
-          <label htmlFor="password">Forget Password?</label>
-          <button type="submit" className='styleform'>Login</button>
+          <button type="submit" className="styleform">Register</button>
         </form>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Register;
